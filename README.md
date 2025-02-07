@@ -25,17 +25,17 @@ Test collection size is 15 MB. Test collection is compatible with Solr 9.6.1 (an
 All test queries are executed consequentially, one after another, without delays.  Performance test is executed 20 times, result outputs to console.
 Query time is taken from Solr output ***QTime*** parameter (responseHeader section).
 ## How to run Solr benchmark
-Download and extract Solr binaries: https://archive.apache.org/dist/solr/solr/
+1. Download and extract Solr binaries: https://archive.apache.org/dist/solr/solr/
 
-Download test collection wikitest.zip and extract to ***SOLR/server/solr*** folder
+2. Download test collection [wikitest.zip](https://github.com/pavel-chumakou/solr-benchmark/blob/main/wikitest.zip) and extract to ***SOLR/server/solr*** folder
 
-Run Solr:
+3. Run Solr:
 ```console
 $ SOLR/bin/solr start -f
 ```
-Download Solr benchmark script: RunSolrQuery.java
+4. Download Solr benchmark script: [RunSolrQuery.java](https://github.com/pavel-chumakou/solr-benchmark/blob/main/RunSolrQuery.java)
 
-Run Solr benchmark script:
+5. Run Solr benchmark script:
 ```console
 $ java RunSolrQuery.java
 ```
