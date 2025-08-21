@@ -1,6 +1,4 @@
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URI;
 import java.net.URL;
 
@@ -18,7 +16,7 @@ public class RunSolrQuery {
 
         URL u = new URI(url).toURL();
         InputStream is = u.openStream();
-        DataInputStream dis = new DataInputStream(new BufferedInputStream(is));
+        BufferedReader dis = new BufferedReader(new InputStreamReader(is));
         int queryTime = -1;
         int numFound = -1;
         String s;
