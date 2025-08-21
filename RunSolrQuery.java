@@ -1,5 +1,3 @@
-package com.wk.tool.solr;
-
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.InputStream;
@@ -66,4 +64,5 @@ public class RunSolrQuery {
         }
         System.out.println();
     }
+
 }
